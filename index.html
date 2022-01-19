@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/scss/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <title>Today's Weather</title>
+</head>
+<body>
+    <!--Header / Menu -->
+    <header class="header flex flex-d-c flex-jc-sb flex-ai-c">
+        <h1>Today's Weather</h1>
+    </header>
+
+    <div class="boxWeather">
+
+        <div class="div_input">
+            <input type="text" name="search-bar" class="search-bar" id="search-bar" placeholder="Search city or zip code">
+            <input type="submit" value="Get Weather" class="button">
+        </div>
+    
+        <!-- WEATHER INFORMATION -->
+        <div class="weather" id="weatherBlock">
+        <img src="" id="icon" alt="icon-weather">
+
+            <div class="city_name"> <!--City name and country-->
+                <p class="cityName"></p>
+                <p class="cityCountry"></p>
+            </div>
+    
+            <div class="div_Temp"> <!-- City Temperature, Max and Min temp of the day and Description of the weather-->
+                <p class="cityTemp"></p>
+                <div class="div_MaxMin">
+                    <p class="cityTempMax"></p><p class="cityTempMin"></p>
+                </div>
+                <p class="cityDesc"></p> 
+            </div>
+    
+            <div class="div_Hum">
+                <p class="cityHum"></p> <!-- Humidity-->
+            </div>
+    
+            <div class="switchDegree"> <!-- Celsius and Fahrenheit Button-->
+                <label for="checkbox" class="switch">
+                    <input type="checkbox" name="checkbox" class="checkbox">
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
