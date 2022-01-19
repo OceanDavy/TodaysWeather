@@ -196,6 +196,17 @@ div.weather .div_Temp p.cityDesc {
   background-color: #ffe581;
 }
 
+div.signature {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+div.signature a {
+  color: #ffe581;
+}
+
 .header {
   height: 100px;
   padding-right: 2em;

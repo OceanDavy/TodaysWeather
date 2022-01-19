@@ -120,3 +120,13 @@ div.weather{
     }
 
 }
+
+div.signature{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Roboto', sans-serif;
+    a{
+        color: #ffe581;
+    }
+}
