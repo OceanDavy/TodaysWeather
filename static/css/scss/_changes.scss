@@ -1,0 +1,122 @@
+.boxWeather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 450px;
+}
+
+//Input to search weather
+.div_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    #search-bar{
+        width: 15rem;
+        height: 2rem;
+        margin: 12px 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 12px;    
+        font-size: 20px;
+        text-align: center;
+        color: $White;
+        background-color: #009bdb;
+        border: none;
+        border-radius: 12px;
+    }
+
+    .button{
+        font-size: 1.25rem;
+        background-color: $White;
+        border: 1px solid #009bdb;
+        border-radius: 12px;
+    }
+    .button:hover{
+        background-color: #84d5f8;
+        transition: 0.2s;
+    }
+}
+
+//Weather Info
+div.weather{
+    position: relative;
+    display: none;
+    width: 265px;
+    margin-right: 12px;
+    margin-left: 12px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    text-align: center;
+    color: $Black;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 37%, rgba(177,177,177,1) 100%); 
+
+    #icon{
+        position: absolute;
+        top: 57px;
+        right: 30px;
+        width: 69px;
+    }
+
+    div.city_name{
+        display: flex;
+        align-items: center;
+        p.cityName{
+            margin-top: 7px;
+            margin-bottom: 7px;
+            font-size: 1.45rem;
+            color: $GrayBlackBrighter;     
+        }
+        p.cityCountry{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 0.90rem;
+            border-radius: 25px;
+            color: $White;
+            background-color: crimson;
+        }
+    }
+
+    .div_Temp{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p.cityTemp{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 2.5rem;
+        }
+        .div_MaxMin{
+            display: flex;
+            justify-content: space-around;
+            width: calc(100% - 35%);
+            p{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        p.cityDesc{
+            width: 90%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Barlow Condensed', sans-serif;
+            letter-spacing: 4px;
+            background-color: #ffe581;
+        }
+    }
+
+}
